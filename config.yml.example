@@ -1,0 +1,6 @@
+RABBITMQ:
+  HOST: host.example.com
+  PORT: 5672
+  USER: collie
+  PASS: SHHHH!
+CUPS_PRINTER_NAME: Zebra_Printer
