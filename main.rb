@@ -10,7 +10,7 @@ CONFIG = YAML.load_file('config.yml')
 
 # Setup logger
 logger = Logger.new(STDOUT)
-logger.level = Logger::WARN
+logger.level = Logger::DEBUG
 
 # Consumer Class for Print Jobs
 class ZebraJobConsumer < Bunny::Consumer
