@@ -9,8 +9,7 @@ mq.start
 channel = mq.create_channel
 exchange = channel.topic "collie", :auto_delete => true
 
-for i in 1..1000
-  exchange.publish File.open("default.zpl","rb").read, :routing_key => "print_queue"
-end
+
+exchange.publish File.open("default.zpl","rb").read, :routing_key => "print_queue"
 
 mq.close
